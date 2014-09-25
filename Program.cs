@@ -9,10 +9,10 @@ namespace Architecture_Project_2014_15
         public const int BASE_PROGRAM_ADDR = 0x00400000;
         public const int MEMORY_ENTRY_SIZE_BYTES = 0x04;
 
-        public const int LOOP_MIN = 0;
-        public const int LOOP_MAX = 3;
-        public const int INNERLOOP_MIN = 0;
-        public const int INNERLOOP_MAX = 3;
+        public const int LOOP_MIN = 2;
+        public const int LOOP_MAX = 6;
+        public const int INNERLOOP_MIN = 2;
+        public const int INNERLOOP_MAX = 4;
 
         static void Main(string[] args)
         {
@@ -120,7 +120,7 @@ namespace Architecture_Project_2014_15
                     {
                         int j = 0;
 
-                        for (j = 0; j < loops; j++)
+                        for (j = 1; j < loops; j++)
                         {
                             if (debug_mode_on)
                             {
@@ -135,7 +135,7 @@ namespace Architecture_Project_2014_15
                             {
                                 int k = 0;
 
-                                for (k = 0; k < innerloops; k++)
+                                for (k = 1; k < innerloops; k++)
                                 {
                                     if (debug_mode_on)
                                     {
